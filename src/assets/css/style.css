@@ -1,4 +1,4 @@
-.container{
+.container {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -6,28 +6,35 @@
   justify-content: space-between;
   gap: 30px;
   padding: 100px 0;
-  width: 95%;
+  width: 90%;
   margin: auto;
 }
 
-.left{
+.left {
   flex: 0 0 calc(70%);
+}
+
+.left h1{
+  margin-bottom: 20px;
+}
+
+.left-row {
   display: flex;
   align-items: stretch;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-.desert-col{
+.desert-col {
   flex: 0 0 calc(33.3% - 20px);
 }
 
-.desert-img{
+.desert-img {
   position: relative;
   margin-bottom: 10%;
 }
 
-.desert-img img{
+.desert-img img {
   width: 100%;
   border-radius: 15px;
   display: block;
@@ -35,7 +42,7 @@
   position: relative;
 }
 
-.desert-img button{
+.desert-img button {
   position: absolute;
   bottom: -5%;
   left: 50%;
@@ -43,25 +50,29 @@
   padding: 12px 25px;
   border-radius: 25px;
   border: transparent;
+  cursor: pointer;
 }
 
-.desert-content h3{
+.desert-content h3 {
   font-size: 0.9em;
   font-weight: 450;
   margin-bottom: 10px;
 }
 
-.desert-content h2{
+.desert-content h2 {
   font-size: 1.1em;
   margin-bottom: 10px;
 }
 
-.desert-content span{
+.desert-content span {
   display: block;
   color: rgb(172, 0, 0);
   font-weight: 500;
 }
 
-.right{
+.right {
   flex: 0 0 calc(30%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
 }
