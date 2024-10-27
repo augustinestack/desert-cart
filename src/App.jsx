@@ -1,6 +1,7 @@
 import React from 'react';
 import deserts from './assets/json/deserts.json';
 import image from './assets/images/image-baklava-desktop.jpg';
+import emptyCartImg from './assets/images/illustration-empty-cart.svg'
 
 const App = () => {
   return (
@@ -24,7 +25,13 @@ const App = () => {
             ))}
           </div>
         </div>
-        <div className='right'></div>
+        <div className='right'>
+          <h3>You cart <span>(0)</span></h3>
+          <div className='empty-cart-img'>
+            <img src={emptyCartImg} alt="" />
+          </div>
+          <p>Your added items will appear here</p>
+        </div>
       </div>
     </main>
   );
